@@ -15,7 +15,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/generate', { prompt });
+      const res = await axios.post('https://chatwithai-6665.onrender.com/generate', { prompt });
       setResponse(res.data.response);
     } catch (error) {
       console.error('Error calling the server:', error);
